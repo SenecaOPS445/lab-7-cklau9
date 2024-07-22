@@ -86,6 +86,6 @@ test_b2_run (__main__.lab7i.test_b2_run)
 [Lab 7] - [Investigation 3] - [Part 3] - Global scope - Test for correct output: ./lab7i.py ... ok
 
 ----------------------------------------------------------------------
-Ran 43 tests in 0.188s
+Ran 43 tests in 0.142s
 
 OK
