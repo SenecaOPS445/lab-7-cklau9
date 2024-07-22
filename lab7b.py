@@ -33,23 +33,23 @@ def sum_times(t1, t2):
 
 def change_time(time, seconds):
     time.second += seconds
-    #if valid_time(time) != True:
+    if valid_time(time) != True:
     
     # calculate the time if seconds and/or minute >= 60 
-    while time.second >= 60:
-        time.second -= 60
-        time.minute +=1
-    while time.minute >= 60:
-        time.minute -= 60
-        time.hour += 1
-    
-    # calculate the time if seconds and/or minute <= 0 
-    while time.second < 0: # Do while loop to handle negative second input 
-        time.minute -= 1 # Deduct 1 minute, then add 60 seconds
-        time.second += 60 # New second add 60 seconds
-    while time.minute < 0: # Do while loop while negative minute generated
-        time.hour -= 1 # Deduct 1 hr, then add 60 minutes
-        time.minute += 60
+        while time.second >= 60:
+            time.second -= 60
+            time.minute +=1
+        while time.minute >= 60:
+            time.minute -= 60
+            time.hour += 1
+        
+        # calculate the time if seconds and/or minute <= 0 
+        while time.second < 0: # Do while loop to handle negative second input 
+            time.minute -= 1 # Deduct 1 minute, then add 60 seconds
+            time.second += 60 # New second add 60 seconds
+        while time.minute < 0: # Do while loop while negative minute generated
+            time.hour -= 1 # Deduct 1 hr, then add 60 minutes
+            time.minute += 60
  
     return None
 
